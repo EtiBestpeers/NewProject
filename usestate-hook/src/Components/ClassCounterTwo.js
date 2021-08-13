@@ -11,8 +11,10 @@ class ClassCounter extends Component {
     }
 
     incrementCount = () => {
-        this.setState({
+        this.setState(prevState => {
+            return {
             count: this.state.count +1
+            }
         })
     }
    
